@@ -1,2 +1,2 @@
-# kompassi
+# Kompassi
 Kompassi projekti
