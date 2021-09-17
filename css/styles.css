@@ -1,0 +1,68 @@
+/* Tyyppi valitsimet */
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background-color: #EEEEEE;
+    margin: 0 auto;
+  }
+  
+  main {
+      background-color:  rgb(65, 52, 175);
+  }
+  
+  header {
+  background-color: green;
+  }
+  
+  footer {
+  background-color: #606c38;
+  text-align: center;
+  }
+  
+  li {
+    text-decoration: none;
+  }
+  
+  header nav {
+  
+  }
+  
+  header nav ul,
+  footer ul {
+      list-style-type: none;
+    display: inline;
+  }
+  
+  header nav ul {
+  display: flex;
+  justify-content: space-between;
+  }
+  
+  a {
+    color: grey;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+
+/* Luokka valitsimet */
+
+  .container {
+      background-color: #fefae0;
+      max-width: 1200px;
+  }
+  
+  .nav-container {
+  display: flex;
+  justify-content: space-between;
+  }
+  
+
+/* ID-valitsimet */
+  #logo {
+  background-image: url("");
+  display: block;
+  height: 4rem;
+  width: auto;
+  }
