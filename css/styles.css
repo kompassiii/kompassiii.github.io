@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Tyyppi valitsimet */
 
 body {
@@ -7,16 +11,21 @@ body {
 }
 
 main {
-    background-color:  rgb(65, 52, 175);
+    background-color:  rgb(173, 171, 185);
+    padding: 1rem;
 }
 
 header {
-    background-color: green;
+    background-color: #ccccc6;
 }
 
 footer {
-    background-color: #606c38;
+    background-color:#ccccc6;
     text-align: center;
+}
+
+figure {
+    margin:0;
 }
 
 li {
@@ -42,17 +51,93 @@ a:link {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
 /* Luokka valitsimet */
+.img-main {
+    position: relative;
+    background-color: aqua;
+    background-image: url("../images/mountains-1899264__340.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 100%;
+    height: 0;
+}
+
+
+
+.img-main h1 {
+    position: absolute;
+    top: 37.5%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.img-main div {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
 
 .container {
     background-color: #fefae0;
     max-width: 1200px;
     margin: 0 auto;
 }
-
+.container.header {
+    display: flex;
+}
 .nav-container {
     display: flex;
     justify-content: space-between;
+}
+
+.flex-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /*tyhjä tilaa jää väleihin. */
+}
+
+.flex-container button.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 60%;
+    border: none;
+}
+
+.flex-container button.next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 60%;
+    border: none;
+}
+
+.flex-container img {
+
+    height: 10%;
+}
+
+.col {
+    width: 32%;
+
 }
 
 
@@ -62,4 +147,19 @@ a:link {
     display: block;
     height: 4rem;
     width: auto;
+}
+
+
+@media (min-width: 480px) {
+    .img-main {
+        padding-top: 56.25%; /* 16:9 (suhdeluvut)*/
+    }
+
+}
+
+@media (min-width: 900px) {
+    .img-main {
+        padding-top: 36%; /* 16:9 (suhdeluvut)*/
+    }
+
 }
