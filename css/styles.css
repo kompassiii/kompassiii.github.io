@@ -56,7 +56,37 @@ img {
     height: auto;
 }
 
+/* aktiviteetit */
+.row {
+    display: flex;
+    text-align: center;
+    color: white;
+  
+  }
+  
+  .imageHolder img {
+    width: 100%;
+      height: auto;
+      display: block;
+    border-radius: 25px;
+  }
+  
+  .imageHolder {
+      width: 31.3%;
+      float: left;
+      margin: 1%;
+    
+  }
+  
+  .imageHolder .caption {
+    position: relative;
+    top: -45%;
+    font-weight: bold;
+    opacity: 0.9;
+    text-shadow: 2px 2px black;
+  }
 
+  /* aktiviteetit */
 
 /* Luokka valitsimet */
 .img-main {
