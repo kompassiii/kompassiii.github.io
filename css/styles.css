@@ -57,6 +57,11 @@ img {
 }
 
 /* aktiviteetit */
+
+.section-heading {
+    text-align: center;
+  }
+
 .row {
     display: flex;
     text-align: center;
