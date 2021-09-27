@@ -175,3 +175,9 @@ a:link {
   width: 500px;
   overflow-y: scroll;
   } 
+#logo {
+    /* background-image: url("images/kompassi_logo.png"); */
+    display: block;
+    height: 4rem;
+    width: auto;
+}
