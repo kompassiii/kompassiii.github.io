@@ -1,3 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Tyyppi valitsimet */
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background-color: #EEEEEE;
+    margin: 0 auto;
+}
+
+main {
+    background-color:  rgb(173, 171, 185);
+    padding: 1rem;
+}
+
+header {
+    background-color: #ccccc6;
+}
+
+footer {
+    background-color:#ccccc6;
+    text-align: center;
+}
+
+figure {
+    margin:0;
+}
+
+li {
+    text-decoration: none;
+}
+
+header nav ul,
+footer ul {
+    list-style-type: none;
+    display: inline;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: grey;
+}
+
+a:link {
+    text-decoration: none;
+}
 
   
   
