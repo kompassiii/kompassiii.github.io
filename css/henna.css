@@ -1,48 +1,4 @@
-body {
-    font-family: 'Barlow', sans-serif;
-    background-color: #EEEEEE;
-    margin: 0;
-    
-  }
-  
-  main {
-      background-color:  rgb(204, 204, 206);
-      padding: 1rem;
-  }
-  
-  header {
-  background-color: rgb(174, 190, 174);
-  }
-  
-  footer {
-  background-color: #343530;
-  text-align: center;
-  }
-  
-  li {
-    text-decoration: none;
-    list-style-type: none;
-  }
-  
-  
-  header nav ul,
-  footer ul {
-      list-style-type: none;
-    display: inline;
-  }
-  
-  header nav ul {
-  display: flex;
-  justify-content: space-between;
-  }
-  
-  a {
-    color: grey;
-  }
-  
-  a:link {
-    text-decoration: none;
-  }
+
   
   
   button {
@@ -167,12 +123,3 @@ body {
   width: 500px;
   overflow-y: scroll;
   } 
-  
-  #logo {
-  /* background-image: url("images/kompassi_logo.png"); */
-  display: block;
-  height: 4rem;
-  width: auto;
-  } 
-  
-  
