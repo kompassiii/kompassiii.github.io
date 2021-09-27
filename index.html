@@ -1,10 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <title>Kompassi</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etusivu</title>
+<link rel="stylesheet" href="css/styles.css" media="screen"/>
 </head>
 <body>
-    
+
+<div class="container">
+    <header>
+
+        <div class="container-header">
+            <a href="index.html">
+                <img src="images/kompassi_logo.png" id="logo" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+            <div>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="kohdesivu.html">Kohteet</a></li>
+                <li><a href="aktiviteetit.html">Aktiviteetit</a></li>
+            </div> <!-- /.nav-container -->
+            <div >
+                <form action="#">
+                <input type="text" value="Hae kohteita">
+                </form>
+            </div> <!-- /.nav-container -->
+            <div>
+                <!-- <li><a href="#">Tuki</a></li> -->
+                <li><a href="rekisteröidy.html">Rekisteröidy</a></li>
+                <li><a href="kirjaudu.html">Kirjaudu</a></li>
+            </div> <!-- /.nav-container -->
+            </ul>
+        </nav>
+    </header>
+</div> <!--/.container  -->
+<div class="container">
+
+    <section class="img-main">
+        <h1>Etsi ja löydä tiesi luontoon</h1>
+
+        <div >
+            <form action="#">
+            <input type="text" value="Hae kohteita">
+            </form>
+        </div>
+    </section>
+    <main>
+        <h2>Suosituimmat</h2>
+        <div class="flex-container">
+            <button class="back"><</button>
+            <div class="col">
+                <a href="">
+                    <figure>
+                        <img src="images/running-4782722_1920.jpg" alt="" srcset="">
+                        <figcaption>Tannelan juoksurata</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col">
+                <a href="">
+                    <figure>
+                        <img src="images/log-cabin-1886620_1920.jpg" alt="" srcset="">
+                        <figcaption>Rämeen autiotupa</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col">
+                <a href="">
+                    <figure>
+                        <img src="images/mountains-2098408_1920.jpg" alt="" srcset="">
+                        <figcaption>Vesuviuksen latu</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <button class="next">></button>
+        </div>
+        <h2>Uusimmat</h2>
+        <div class="flex-container">
+
+            <button class="back"><</button>
+            <div class="col">
+                <figure>
+                    <img src="images/travel-1749508_1920.jpg" alt="" srcset="">
+                    <figcaption>Lumon lampi</figcaption>
+                </div>
+                </figure>
+            <div class="col">
+                <figure>
+                    <img src="images/canyon-1740973__340.jpg" alt="" srcset="">
+                    <figcaption>Kiljotiini kanjonin näköalapaikka</figcaption>
+                </figure>
+            </div>
+
+            <div class="col">
+                <figure>
+                    <img src="images/landscape-2990060_1920.jpg" alt="" srcset="">
+                    <figcaption>Tuonelan suisto</figcaption>
+                </figure>
+            </div>
+            <button class="next">></button>
+        </div>
+    </main>
+</div> <!--/.container  -->
+
+<footer>
+    <ul>
+        <h2>Otsikko listalle</h2>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="hakusivu.html">Haku</a></li>
+        <li><a href="kohdesivu.html">Kohteet</a></li>
+        <li><a href="aktiviteetit.html">Aktiviteetit</a></li>
+    </ul>
+
+    <ul>
+        <h2>Otsikko listalle</h2>
+        <li><a href="tuki.html">Tuki</a></li>
+        <li><a href="rekisteröidy.html">Rekisteröidy</a></li>
+        <li><a href="kirjaudu.html">Kirjaudu</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">Tietosuojaseloste</a></li>
+        <li><a href="#">Käyttöehdot</a></li>
+        <li><a href="#">Yhteystiedot</a></li>
+    </ul>
+    <ul>
+        <li><a href="https://github.com/kompassiii">Github</a></li>
+        <li><a href="https://kompassiii.wordpress.com/">Wordpress</a></li>
+    </ul>
+    &copy; Kompassi
+</footer>
+
 </body>
 </html>
+
