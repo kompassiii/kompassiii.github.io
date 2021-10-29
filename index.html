@@ -27,9 +27,9 @@
                         <li><a href="kohdesivu.html">Kohteet</a></li>
                         <li><a href="aktiviteetit.html">Aktiviteetit</a></li>
                     </div> <!-- /.nav-container -->
-                    <div>
-                        <form action="#">
-                            <input type="text" value="Hae kohteita">
+                    <div  >
+                        <form action="#" >
+                            <input type="text" value="Hae kohteita" >
                         </form>
                     </div> <!-- /.nav-container -->
                     <div>
@@ -47,23 +47,74 @@
 
 
     <main>
+
+
             
+        <!--main images-->
+        <div class="homepage-img mb-5" style="background-image:url('images/forest-931706_960_720.webp');">
 
-        <div class="homepage-img mb-5" style="background-image:url('images/mountains-1899264__340.jpg');">
-
-            <div>
+            <div class="cont">
                 <h1>Etsi ja löydä tiesi luontoon</h1>
 
+
                 <form class="mt-5 d-none d-sm-block" action="#">
-                    <input type="text" value="Hae kohteita">
-                </form>
+                    <div class="form-group ">
+                      <input type="text" class="form-control" placeholder="Hae kohteita">
+                    <!--<small  class="form-text text-muted"><p>We'll never share your email with anyone else.</small>--> 
+                    </div>
+                  </form>
             </div>
         </div>
 
-        <div class="container-fluid max-width mb-5">
+        <!--horizontal sroll content-->
+        <div class="container-fluid max-width position-relative">
+            <h2>Suosituimmat</h2>
+            <button id="prevBtn" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button id="nextBtn" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div id="contentDiv" class=" scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2 overflow-auto hide-sroll position-relative">
+                <!--All content come inside this div by javascript-->
+            </div>
+        </div>
+
+        <!--content-->
+        <div class="homepage-content container-fluid max-width mb-5">
             <div class="row">
                 
-                <h2 class="section-heading">Suosituimmat</h2>
+                <h2 class="section-heading">Uusimmat</h2>
+                <div class="col-6 col-sm-4 mb-3">
+                    <div class="shadow p-3 mb-5 bg-white rounded">
+                        <a href="#">
+                            <img src="images/jarvi1.jpg" class="d-block img-fluid rounded" alt="Järvinen kuva">
+                        </a>
+                    </div>
+                    <div>
+                        Siirappi järvi
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 mb-3">
+                    <div>
+                        <a href="#">
+                            <img src="images/metsa1.jpg" class="d-block img-fluid rounded" alt="Järvinen kuva">
+                        </a>
+                    </div>
+                    <div>
+                        Huojuva harju
+                    </div> 
+                </div>
+                <div class="col-6 col-sm-4 mb-3">
+                    <a href="#">
+                        <img src="images/metsa2.jpg" class="d-block w-100 rounded" alt="Järvinen kuva">
+                    </a>
+                        <div>
+                            Puolangan puut
+                        </div>
+                </div>
                 <div class="col-6 col-sm-4 mb-3">
                     <div>
                         <a href="#">
@@ -73,7 +124,6 @@
                     <div>
                         Siirappi järvi
                     </div>
-                   
                 </div>
                 <div class="col-6 col-sm-4 mb-3">
                     <div>
@@ -81,10 +131,9 @@
                             <img src="images/metsa1.jpg" class="d-block img-fluid rounded" alt="Järvinen kuva">
                         </a>
                     </div>
-                        <div>
-                            Huojuva harju
-                        </div>
-                    
+                    <div>
+                        Huojuva harju
+                    </div>
                 </div>
                 <div class="col-6 col-sm-4 mb-3">
                     <a href="#">
@@ -95,252 +144,11 @@
                         </div>
                     
                 </div>
-                <div class="col-6 col-sm-4 mb-3">
-                    <div>
-                        <a href="#">
-                            <img src="images/jarvi1.jpg" class="d-block img-fluid rounded" alt="Järvinen kuva">
-                        </a>
-                    </div>
-                    <div>
-                        Siirappi järvi
-                    </div>
-                   
-                </div>
-                <div class="col-6 col-sm-4 mb-3">
-                    <div>
-                        <a href="#">
-                            <img src="images/metsa1.jpg" class="d-block img-fluid rounded" alt="Järvinen kuva">
-                        </a>
-                    </div>
-                        <div>
-                            Huojuva harju
-                        </div>
-                    
-                </div>
-                <div class="col-6 col-sm-4 mb-3">
-                    <a href="#">
-                        <img src="images/metsa2.jpg" class="d-block w-100 rounded" alt="Järvinen kuva">
-                    </a>
-                        <div>
-                            Puolangan puut
-                        </div>
-                    
-                </div>
-            </div>
-        </div>
-
-
- <!--
-        <div class="container-fluid max-width">
-            <div class="row">
-                
-                <h2 class="section-heading">Suosituimmat</h2>
-             
-                    <div class="col-6 col-sm-4">     
-                        <div class="card">
-                            <a href="#"><img class="card-img-top rounded" src="images/travel-1749508_1920.jpg" alt="Card image cap"></a>
-                            <p>Settiä</p>  
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4">
-                        <div class="card">
-                            <a href="#"><img class="card-img-top rounded" src="images/mountains-1899264__340.jpg" alt="Card image cap"></a>
-                            <p>Settiä</p>  
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4">
-                        <a href="#">
-                            <img src="images/metsa3.jpg" class="d-block w-100 rounded" alt="Järvinen kuva">
-                            <div>
-                                Kiljotiini kanjonin näköalapaikka
-                            </div>
-                        </a>
-                    </div>
-         
             </div>
         </div>
 
 
 
-        <div class="card-deck container-fluid">
-            <div class="row">
-                <div class="col-6 col-sm-4">
-                    <div class="card">
-                    <img class="card-img-top img-fluid" src="images/travel-1749508_1920.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4">
-                    <div class="card">
-                    <img class="card-img-top img-fluid" src="images/mountains-1899264__340.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4">
-                    <div class="card">
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      
-        <div class="container-fluid max-width">
-            <h2>Suosituimmat</h2>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-interval="100">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="images/jarvi1.jpg" class="d-block w-100" alt="Järvinen kuva">
-                                        <div>
-                                            Isot järvialueet
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="images/jarvi2.jpg" class="d-block w-100" alt="Järvinen kuva">
-                                        <div>
-                                            Purot
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="images/jarvi3.jpg" class="d-block w-100" alt="Järvinen kuva">
-                                        <div>
-                                            Isot järvialueet
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item" data-interval="100">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="images/jarvi3.jpg" class="d-block w-100" alt="Järvinen kuva">
-                                        <div>
-                                            Isot järvialueet
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="images/jarvi1.jpg" class="d-block w-100" alt="Järvinen kuva">
-                                        <div>
-                                            Isot järvialueet
-                                        </div>    </div>
-                                    <div class="col-4">
-                                        <img src="images/jarvi2.jpg" class="d-block w-100" alt="Järvinen kuva">
-                                        <div>
-                                            Purot
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item" data-interval="100">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="images/jarvi2.jpg" class="d-block w-100" alt="Järvinen kuva">
-                                        <div>
-                                            Purot
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="images/jarvi3.jpg" class="d-block w-100" alt="Järvinen kuva">
-                                        <div>
-                                            Purot
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="images/jarvi1.jpg" class="d-block w-100" alt="Järvinen kuva">
-                                        <div>
-                                            Purot
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
-                            <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" >
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>   -->
-            <!--
-            <h2>Suosituimmat</h2>
-            <div class="flex-container">
-                <button class="back">
-                    << /button>
-                        <div class="col">
-                            <a href="">
-                                <figure>
-                                    <img src="images/running-4782722_1920.jpg" alt="" srcset="">
-                                    <figcaption>Tannelan juoksurata</figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="">
-                                <figure>
-                                    <img src="images/log-cabin-1886620_1920.jpg" alt="" srcset="">
-                                    <figcaption>Rämeen autiotupa</figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="">
-                                <figure>
-                                    <img src="images/mountains-2098408_1920.jpg" alt="" srcset="">
-                                    <figcaption>Vesuviuksen latu</figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <button class="next">></button>
-            </div>
-            <h2>Uusimmat</h2>
-            <div class="flex-container">
-
-                <button class="back">
-                    << /button>
-                        <div class="col">
-                            <figure>
-                                <img src="images/travel-1749508_1920.jpg" alt="" srcset="">
-                                <figcaption>Lumon lampi</figcaption>
-                        </div>
-                        </figure>
-                        <div class="col">
-                            <figure>
-                                <img src="images/canyon-1740973__340.jpg" alt="" srcset="">
-                                <figcaption>Kiljotiini kanjonin näköalapaikka</figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="col">
-                            <figure>
-                                <img src="images/landscape-2990060_1920.jpg" alt="" srcset="">
-                                <figcaption>Tuonelan suisto</figcaption>
-                            </figure>
-                        </div>
-                        <button class="next">></button>
-            </div>-->
-    
     </main>
 
 
@@ -373,9 +181,9 @@
         </ul>
         <ul class="list-inline">
             <li class="list-inline-item">
-                <a href="https://github.com/kompassiii"><img src="images/GitHub-Mark-32px.png" alt="Github"></a>
+                <a href="https://github.com/kompassiii"><img src="images/github.svg" width="40" height="40" alt="Github"></a>
             </li>
-            <li class="list-inline-item"><a href="https://kompassiii.wordpress.com/">Wordpress</a></li>
+            <li class="list-inline-item"><a href="https://kompassiii.wordpress.com/"><img src="images/wordpress.svg" width="40" height="40" alt="Wordpress"></a></li>
             
         </ul>
         &copy; Kompassi
@@ -383,6 +191,7 @@
 
 
     <script src="vendor/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
 </body>
 
