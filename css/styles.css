@@ -1,5 +1,6 @@
 
 
+
 footer {
     background-color: #A7e8e8;
     margin-top: 2rem;
@@ -17,11 +18,19 @@ footer a {
 
 #nextBtn.carousel-control-next {
     bottom: -3.5rem;
+
+#logo {
+    /* background-image: url("images/kompassi_logo.png"); */
+    display: block;
+    height: 4rem;
+    width: auto;
+
 }
 
 .container-fluid.max-width {
     max-width: 1150px;
 }
+
 
 
 .homepage-img {
@@ -118,7 +127,6 @@ footer a {
 
 
 @media (min-width: 576px) {
-
     .homepage-img {
         padding-top: 56.25%;
     }
@@ -127,7 +135,6 @@ footer a {
 @media (min-width: 768px) {
     .homepage-img {
         padding-top: 45%; /* 16:9 (suhdeluvut)*/
-        background-color: black;
     }
 
 }
@@ -135,7 +142,7 @@ footer a {
 @media (min-width: 992px) {
     .homepage-img {
         padding-top: 33%; /* 16:9 (suhdeluvut)*/
-        background-color: aquamarine;
+
     }
 
 
