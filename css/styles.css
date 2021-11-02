@@ -1,3 +1,10 @@
+#logo {
+    /* background-image: url("images/kompassi_logo.png"); */
+    display: block;
+    height: 4rem;
+    width: auto;
+}
+
 .container-fluid.max-width {
     max-width: 1150px;
 }
