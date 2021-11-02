@@ -68,7 +68,11 @@ footer a {
     max-width: 14rem;
 }
 
-
+/* form infline color */
+.form-control:focus {
+    border-color: #4be7e7;
+    box-shadow: 0 0 0 0.2rem #4be7e7;
+} 
 
 
 .rounded {
