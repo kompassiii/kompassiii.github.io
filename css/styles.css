@@ -1,4 +1,15 @@
+h1,h2,h3,h4,h5,h6,p {
+    color: #082121;
+}
 
+a {
+    color: #082121;
+}
+
+a:hover {
+    color: #082121;
+    text-decoration: underline;
+}
 
 
 footer {
@@ -36,7 +47,18 @@ footer a {
     max-width: 1150px;
 }
 
+.navbar {
+    text-align: center;
+}
 
+/* navbar color */
+.navbar-light {
+    background: #ffffff !important;
+}
+
+.nav-link{
+    color: #082121 !important;
+}
 
 .homepage-img {
     position: relative;
