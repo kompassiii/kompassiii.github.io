@@ -154,7 +154,11 @@ footer a {
 
 /*-------------------------------------------------*/
 
-
+.img-map {
+    background: url(/images/kartta-suorakulmio-placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 @media (min-width: 576px) {
