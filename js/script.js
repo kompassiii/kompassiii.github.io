@@ -97,7 +97,7 @@ function uploadContent(div) {
         /*Greate a-link inside div name contentCardEl*/
         let a = document.createElement("a");
         contentCardEl.appendChild(a);
-        a.href = "#";
+        a.href = "kohdesivu.html";
 
         /*Greate images inside a-link*/
         let img = document.createElement("img");
@@ -117,8 +117,16 @@ function uploadContent(div) {
     }
 }
 
+
+
 /*Horizontal scrollbarr prevButton*/
 prevBtnEl.onclick = () => {
+
+    //hide prevBntEl if srcoll position is back to start
+    if (moveSlide <= contentDivWidth  ) {
+        prevBtnEl.classList.add('d-none');
+    }
+    
     console.log(prevBtnEl.style.move = contentDivWidth)
     var cols = document.getElementsByClassName('move');
     for(i = 0; i < cols.length; i++) {
@@ -130,16 +138,23 @@ prevBtnEl.onclick = () => {
 
 /*Horizontal scrollbarr nextButton*/
 nextBtnEl.onclick = () => {
-    console.log("helldfsdfo")
+    //show prevBtnEl after first click 
+    prevBtnEl.classList.remove('d-none');
     var cols = document.getElementsByClassName('move');
+    console.log(cols[0].offsetWidth *cols.length - contentDivWidth)
+    console.log(moveSlide)
+    console.log()
+    //hide nextBtnEl if scroll position is end of the list
+    if (cols[0].offsetWidth * cols.length - contentDivWidth < moveSlide) {
+        nextBtnEl.classList.add('d-none')
+        console.log(moveSlide)
+    }
     for(i = 0; i < cols.length; i++) {
       cols[i].style.right = contentDivWidth + moveSlide +  "px";
     }
     moveSlide += contentDivWidth;
 }
 uploadContent(contentDivEl);
-uploadContent(contentDivSecondEl);
-uploadContent();
-uploadContent();
-uploadContent();
-uploadContent();
+//uploadContent(contentDivSecondEl);
+
+
