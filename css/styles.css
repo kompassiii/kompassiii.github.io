@@ -154,13 +154,18 @@ footer a {
 
 /*-------------------------------------------------*/
 
-
+@media (max-width: 768px) {
+    #navbar-content {
+        height: 100vh;
+     }
+}
 
 
 @media (min-width: 576px) {
     .homepage-img {
         padding-top: 56.25%;
     }
+
 }
  
 @media (min-width: 768px) {
