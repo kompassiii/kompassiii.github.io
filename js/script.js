@@ -35,7 +35,7 @@ let moveSlideSecond = 0;
 let moveSlideThird = 0;
 let moveSlideFourth = 0;
 
-activities = [
+let activities = [
     {
         name: "kohde 1",
         images: "images/landscape-2990060_1920.jpg",
@@ -182,11 +182,8 @@ function uploadContent(div) {
 }
 
 function uploadContentActivity(div, activity) {
-    console.log("sdfsddddddddddddddddddddd")
-    console.log(hobby.helppokulkuiset[0])
 
     for (var i in hobby[activity]) {
-
 
         /*Greate col-div inside row-div id=ContentDiv */
         let contentColEl = document.createElement("div");
@@ -212,7 +209,7 @@ function uploadContentActivity(div, activity) {
         /*Greate images inside a-link*/
         let img = document.createElement("img");
         a.appendChild(img)
-        img.src = activities[i].images;
+        img.src = activities[ Math.floor(Math.random()*activities.length)].images;
         img.classList.add("rounded");
 
         /*Greate span element inside contentCard element*/
@@ -282,6 +279,7 @@ if (bodyEl.classList.contains('homepage')) {
 if (bodyEl.classList.contains('aktiviteetit')) {
     /*Get horizontal srcollbarr width value*/
     var contentDivWidth = contentDivFirstEl.offsetWidth;
+
 
     uploadContentActivity(contentDivFirstEl, "helppokulkuiset");
     uploadContentActivity(contentDivSecondEl, "Vesistö");
@@ -416,4 +414,4 @@ if (bodyEl.classList.contains('aktiviteetit')) {
         moveSlide += contentDivWidth;
     }
    
-    }
+}
