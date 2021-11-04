@@ -2,6 +2,7 @@
 console.log("ajsdkf")
 
 var contentDivEl = document.getElementById("contentDiv")
+var contentDivTestEl = document.getElementById("contentDivTest")
 var contentDivFirstEl = document.getElementById("contentDivFirst")
 var contentDivSecondEl = document.getElementById("contentDivSecond")
 var contentDivThirdEl = document.getElementById("contentDivThird")
@@ -106,7 +107,7 @@ let activities = [
 
 ]
 
-var hobby = {
+let hobby = {
     helppokulkuiset: [
         "Lyhyet kävelyt",
         "liikuntarajoitteisille",
@@ -169,7 +170,7 @@ function uploadContent(div) {
         img.src = activities[i].images;
       /*img.classList.add("d-block");
         img.classList.add("img-fluid");----*/
-        img.classList.add("rounded");
+       // img.classList.add("rounded");
 
         /*Greate span element inside contentCard element*/
         let span = document.createElement("span");
@@ -180,7 +181,7 @@ function uploadContent(div) {
         console.log("sdjkf")
     }
 }
-
+/*----- Greate horizontal list of activities-----------*/ 
 function uploadContentActivity(div, activity) {
 
     for (var i in hobby[activity]) {
@@ -210,7 +211,7 @@ function uploadContentActivity(div, activity) {
         let img = document.createElement("img");
         a.appendChild(img)
         img.src = activities[ Math.floor(Math.random()*activities.length)].images;
-        img.classList.add("rounded");
+        //img.classList.add("rounded");
 
         /*Greate span element inside contentCard element*/
         let span = document.createElement("span");
@@ -229,6 +230,13 @@ function uploadContentActivity(div, activity) {
 
 //upload content in index.html
 if (bodyEl.classList.contains('homepage')) {
+
+    /*Get horizontal srcollbarr width value*/
+    var contentDivWidth = contentDivEl.offsetWidth;
+
+    uploadContent(contentDivEl);
+    uploadContent(contentDivTestEl);
+
     /*Horizontal scrollbarr prevButton*/
     prevBtnEl.onclick = () => {
 
@@ -265,10 +273,7 @@ if (bodyEl.classList.contains('homepage')) {
         }
         moveSlide += contentDivWidth;
     }
-    /*Get horizontal srcollbarr width value*/
-    var contentDivWidth = contentDivEl.offsetWidth;
 
-    uploadContent(contentDivEl);
 
 }
 
