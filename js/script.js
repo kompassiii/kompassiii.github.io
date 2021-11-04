@@ -72,6 +72,15 @@ let activity = [
             "uusimmat",
         ]
     },
+    {
+        name: "kohde SS 7",
+        images: "images/travel-1749508_1920.jpg",
+        tag: [
+            "suosituimmat",
+            "uusimmat",
+        ]
+    },
+
 ]
 
 /*----- Greate horizontal list of contenent-----------*/ 
@@ -133,6 +142,7 @@ prevBtnEl.onclick = () => {
       cols[i].style.right = -contentDivWidth + moveSlide +  "px";
     }
     moveSlide -= contentDivWidth;
+    nextBtnEl.classList.remove('d-none');
 
 }
 
@@ -145,7 +155,7 @@ nextBtnEl.onclick = () => {
     console.log(moveSlide)
     console.log()
     //hide nextBtnEl if scroll position is end of the list
-    if (cols[0].offsetWidth * cols.length - contentDivWidth < moveSlide) {
+    if (cols[0].offsetWidth * cols.length - contentDivWidth < moveSlide + contentDivWidth) {
         nextBtnEl.classList.add('d-none')
         console.log(moveSlide)
     }
