@@ -118,12 +118,12 @@ footer a {
 }
 
 #prevBtn.carousel-control-prev {
-    bottom: -3.5rem;
+    
 
 }
 
 #nextBtn.carousel-control-next {
-    bottom: -3.5rem;
+    
 }
 
 #footerLogo {
@@ -214,7 +214,7 @@ footer a {
 }
 
 
-.move {
+.move, .helppokulkuiset {
     right: 0px;
     transition: all .6s ease-in-out !important;
 }
@@ -229,7 +229,14 @@ footer a {
     -ms-overflow-style: none;
   }
 
-
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 3.5rem;
+    width: 3.5rem;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+}
 
 
 /*-------------------------------------------------*/
@@ -239,8 +246,12 @@ footer a {
         width: 100%;
         margin-right: 0rem;
     }
+.img-map {
+    background: url(/images/kartta-suorakulmio-placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 }
-
 
 @media (min-width: 576px) {
     .homepage-img {

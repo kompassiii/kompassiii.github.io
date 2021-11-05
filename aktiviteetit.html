@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body id="body" class="aktiviteetit">
 
     <header>
 
@@ -54,47 +54,91 @@
 
     </header>
 
+
     <main>
-
         <!--horizontal sroll content-->
-        <div class="container-fluid max-width position-relative">
-            <h2>Suosituimmat</h2>
-            <button id="prevBtn" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button id="nextBtn" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            <div id="contentDiv"
-                class=" scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2 overflow-auto hide-sroll position-relative">
-                <!--All content come inside this div by javascript-->
+        <div class="container-fluid max-width position-relative mb-4 mt-5">
+            <h2 class="mb-0">Helppokulkuiset</h2>
+            <div class="position-relative">
+                <button id="prevBtnFirst" class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button id="nextBtnFirst" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div id="contentDivFirst"
+                    class=" scrolling-wrapper row flex-row flex-nowrap mt-1 py-4 overflow-auto hide-sroll position-relative">
+                    <!--All content come inside this div by javascript-->
+                </div>
             </div>
         </div>
 
         <!--horizontal sroll content-->
-        <div class="container-fluid max-width position-relative mt-4">
-            <h2>Perheystävälliset</h2>
-            <button id="prevBtn" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button id="nextBtn" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            <div id="contentDivSecond"
-                class=" scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2 overflow-auto hide-sroll position-relative">
-                <!--All content come inside this div by javascript-->
+        <div class="container-fluid max-width position-relative mb-4">
+            <h2 class="mb-0">Järviset</h2>
+            <div class="position-relative">
+                <button id="prevBtnSecond" class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button id="nextBtnSecond" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div id="contentDivSecond"
+                    class=" scrolling-wrapper row flex-row flex-nowrap mt-1 py-4 overflow-auto hide-sroll position-relative">
+                    <!--All content come inside this div by javascript-->
+                </div>
             </div>
         </div>
 
+                <!--horizontal sroll content-->
+        <div class="container-fluid max-width position-relative mb-4">
+            <h2 class="mb-0">Pyöräilijöille</h2>
+            <div class="position-relative">
+                <button id="prevBtnThird" class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button id="nextBtnThird" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div id="contentDivThird"
+                    class=" scrolling-wrapper row flex-row flex-nowrap mt-1 py-4 overflow-auto hide-sroll position-relative">
+                    <!--All content come inside this div by javascript-->
+                </div>
+            </div>
+        </div>
 
+                <!--horizontal sroll content-->
+        <div class="container-fluid max-width position-relative mb-4">
+            <h2 class="mb-0">Tuutikki</h2>
+            <div class="position-relative">
+                <button id="prevBtnFourth" class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button id="nextBtnFourth" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div id="contentDivFourth"
+                    class=" scrolling-wrapper row flex-row flex-nowrap mt-1 py-4 overflow-auto hide-sroll position-relative">
+                    <!--All content come inside this div by javascript-->
+                </div>
+            </div>
+        </div>
     </main>
 
 
@@ -120,7 +164,6 @@
             </div>
         </div>
         <!--/.row-->
-
 
         <img src="images/kompassi_logo.png" id="footerLogo" class="m-5" alt="logo" width="200" height="200">
         <ul class="list-inline">
