@@ -1,11 +1,14 @@
 
 console.log("ajsdkf")
-
+var menuBtn = document.getElementById('menuBtn');
 var contentDivEl = document.getElementById("contentDiv")
 var contentDivSecondEl = document.getElementById("contentDivSecond")
 let prevBtnEl = document.getElementById("prevBtn");
 let nextBtnEl = document.getElementById("nextBtn");
 
+menuBtn.onclick = function() {
+    document.body.classList.toggle('menu-open');
+};
 
 /*Get horizontal srcollbarr width value*/
 let contentDivWidth = contentDivEl.offsetWidth;

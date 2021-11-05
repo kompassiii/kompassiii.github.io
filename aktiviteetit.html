@@ -15,28 +15,43 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/kompassi_logo.png" id="headerLogo"
-                        alt="Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav text-center">
-                        <a class="nav-link" href="kohdesivu.html">Kohteet</a>
-                        <a class="nav-link" href="aktiviteetit.html">Aktiviteetit</a>
-                    </div>
-                    <div class="navbar-nav text-center ms-auto">
-                        <a class="nav-link" href="rekisteröidy.html">Rekisteröidy</a>
-                        <a class="nav-link" href="kirjaudu.html">Kirjaudu</a>
-                    </div>
+
+        <div class="container-fluid max-width d-flex justify-content-between align-items-start">
+            <button type="button" id="menuBtn" class="d-md-none">
+                <div class="menu-btn-icon">
+                    <span class="menu-btn-bar"></span>
+                    <span class="menu-btn-bar"></span>
+                    <span class="menu-btn-bar"></span>
+                    <span class="menu-btn-bar"></span>
                 </div>
-            </div>
+                <span class="visually-hidden">Toggle Menu</span>
+            </button>
+
+        </div>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid max-width">
+                <a class="navbar-brand" href="#"><img src="images/kompassi_logo.png" alt="logo"></a>
+                <ul class="navbar-nav justify-content-between w-100">
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="kohdesivu.html">Kohteet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aktiviteetit.html">Aktiviteetit</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="kirjaudu.html">Kirjaudu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rekisteröidy.html">Rekisteröidy</a>
+                        </li>
+                    </ul>
             </div>
         </nav>
+
     </header>
 
     <main>
