@@ -238,6 +238,12 @@ footer a {
     border-radius: 50%;
 }
 
+.img-map {
+    background: url(/images/kartta-suorakulmio-placeholder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
 
 /*-------------------------------------------------*/
 
@@ -245,11 +251,6 @@ footer a {
     .navbar-brand {
         width: 100%;
         margin-right: 0rem;
-    }
-.img-map {
-    background: url(/images/kartta-suorakulmio-placeholder.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     }
 }
 

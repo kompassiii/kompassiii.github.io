@@ -58,7 +58,7 @@
 
 
   <main id="main">
-    <div class="container-fluid">
+    <div class="container-fluid max-width">
       <section id="kohde">
         <h1>Kohde</h1>
         <!--Kohteen nimi-->
@@ -83,11 +83,11 @@
           </div>
 
         </div>
-    </div>
+
     <!--.flex-container-->
 
 
-    <div class="karuselli col-md-8">
+    <div class="karuselli d-flex justify-content-center col-md-8">
       <!--Kuva karuselli, jossa on kohteita-->
       <img
         src="https://images.pexels.com/photos/1834399/pexels-photo-1834399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -102,7 +102,7 @@
     </section>
     <!--#kohde-->
     <div class="flex-container row">
-      <section id="kuvaus" class="col-md-4">
+      <section id="kuvaus" class="col-md-10">
         <h2>Kuvaus kohteesta</h2>
 
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque aliquam nesciunt suscipit nisi, quis officia
@@ -133,8 +133,8 @@
       <!-- <div class="tähdet"> -->
       <!--Boxiin tulee kohteen saama arvostelu tähtinä.-->
       <!-- <p>Arvostelut tähtinä</p> -->
-    </div>
-    <div class="col col-md-2">
+
+    <div class="col col-md-2 float-right">
 
       <div class="sää">
         <h3>Sää</h3>
@@ -170,7 +170,7 @@
         </div>
       </div>
     </div>
-
+  </div>
 
     </div>
     <!--.flexbox-->
@@ -178,8 +178,7 @@
     <!--Aktiviteetit määräytyvät myöhemmin kohteen mukaan.-->
 
 
-    <section id="arvostelut" class="col-md-8">
-
+    <section class="container-fluid col-md-8">
 
       <div class="btnPalvelut">
         <input type="button" value="Arvostelut">
@@ -191,6 +190,7 @@
         <input type="text" placeholder="Etsi arvostelua">
       </div>
 
+      <div>
       <h3>Nimi</h3>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime veniam quidem, animi molestiae eaque
         repellendus, iusto nemo accusamus sunt nisi officia necessitatibus dolor? Debitis vitae non molestiae dicta
@@ -205,11 +205,11 @@
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime veniam quidem, animi molestiae eaque
         repellendus, iusto nemo accusamus sunt nisi officia necessitatibus dolor? Debitis vitae non molestiae dicta
         reprehenderit voluptatem!</p>
-
+      </div>
 
 
     </section>
-    <!--#arvostelut-->
+    </div> <!-- ./container-fluid -->
 
 
   </main>
