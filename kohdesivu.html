@@ -16,32 +16,49 @@
 
 
   <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="images/kompassi_logo.png" id="headerLogo" alt="Logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav text-center">
-            <a class="nav-link" href="kohdesivu.html">Kohteet</a>
-            <a class="nav-link" href="aktiviteetit.html">Aktiviteetit</a>
-          </div>
-          <div class="navbar-nav text-center ms-auto">
-            <a class="nav-link" href="rekisteröidy.html">Rekisteröidy</a>
-            <a class="nav-link" href="kirjaudu.html">Kirjaudu</a>
-          </div>
+
+    <div class="container-fluid max-width d-flex justify-content-between align-items-start">
+      <button type="button" id="menuBtn" class="d-md-none">
+        <div class="menu-btn-icon">
+          <span class="menu-btn-bar"></span>
+          <span class="menu-btn-bar"></span>
+          <span class="menu-btn-bar"></span>
+          <span class="menu-btn-bar"></span>
         </div>
-      </div>
+        <span class="visually-hidden">Toggle Menu</span>
+      </button>
+
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid max-width">
+        <a class="navbar-brand" href="#"><img src="images/kompassi_logo.png" alt="logo"></a>
+        <ul class="navbar-nav justify-content-between w-100">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="kohdesivu.html">Kohteet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aktiviteetit.html">Aktiviteetit</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="kirjaudu.html">Kirjaudu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rekisteröidy.html">Rekisteröidy</a>
+            </li>
+          </ul>
       </div>
     </nav>
+
   </header>
 
 
 
   <main id="main">
-    <div class="container-fluid">
+    <div class="container-fluid max-width">
       <section id="kohde">
         <h1>Kohde</h1>
         <!--Kohteen nimi-->
@@ -66,11 +83,11 @@
           </div>
 
         </div>
-    </div>
+
     <!--.flex-container-->
 
 
-    <div class="karuselli col-md-8">
+    <div class="karuselli d-flex justify-content-center col-md-8">
       <!--Kuva karuselli, jossa on kohteita-->
       <img
         src="https://images.pexels.com/photos/1834399/pexels-photo-1834399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -85,7 +102,7 @@
     </section>
     <!--#kohde-->
     <div class="flex-container row">
-      <section id="kuvaus" class="col-md-4">
+      <section id="kuvaus" class="col-md-10">
         <h2>Kuvaus kohteesta</h2>
 
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque aliquam nesciunt suscipit nisi, quis officia
@@ -116,8 +133,8 @@
       <!-- <div class="tähdet"> -->
       <!--Boxiin tulee kohteen saama arvostelu tähtinä.-->
       <!-- <p>Arvostelut tähtinä</p> -->
-    </div>
-    <div class="col col-md-2">
+
+    <div class="col col-md-2 float-right">
 
       <div class="sää">
         <h3>Sää</h3>
@@ -153,7 +170,7 @@
         </div>
       </div>
     </div>
-
+  </div>
 
     </div>
     <!--.flexbox-->
@@ -161,8 +178,7 @@
     <!--Aktiviteetit määräytyvät myöhemmin kohteen mukaan.-->
 
 
-    <section id="arvostelut" class="col-md-8">
-
+    <section class="container-fluid col-md-8">
 
       <div class="btnPalvelut">
         <input type="button" value="Arvostelut">
@@ -174,6 +190,7 @@
         <input type="text" placeholder="Etsi arvostelua">
       </div>
 
+      <div>
       <h3>Nimi</h3>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime veniam quidem, animi molestiae eaque
         repellendus, iusto nemo accusamus sunt nisi officia necessitatibus dolor? Debitis vitae non molestiae dicta
@@ -188,54 +205,53 @@
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime veniam quidem, animi molestiae eaque
         repellendus, iusto nemo accusamus sunt nisi officia necessitatibus dolor? Debitis vitae non molestiae dicta
         reprehenderit voluptatem!</p>
-
+      </div>
 
 
     </section>
-    <!--#arvostelut-->
+    </div> <!-- ./container-fluid -->
 
 
   </main>
 
-    <footer class="text-center">
-        <div class="row p-3">
-            <div class="col">
-                <ul class="list-unstyled">
-                    <h2>Otsikko listalle</h2>
-                    <li><a href="index.html">Etusivu</a></li>
-                    <li><a href="hakusivu.html">Haku</a></li>
-                    <li><a href="kohdesivu.html">Kohteet</a></li>
-                    <li><a href="aktiviteetit.html">Aktiviteetit</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <ul class="list-unstyled">
-                    <h2>Otsikko listalle</h2>
-                    <li><a href="tuki.html">Tuki</a></li>
-                    <li><a href="rekisteröidy.html">Rekisteröidy</a></li>
-                    <li><a href="kirjaudu.html">Kirjaudu</a></li>
-                </ul>
-            </div>
-        </div>
-        <!--/.row-->
-
-        <img src="images/kompassi_logo.png" id="footerLogo" class="m-5" alt="logo" width="200" height="200">
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Tietosuojaseloste</a></li>
-            <li class="list-inline-item"><a href="#">Käyttöehdot</a></li>
-            <li class="list-inline-item"><a href="#">Yhteystiedot</a></li>
+  <footer class="text-center">
+    <div class="row p-3">
+      <div class="col">
+        <ul class="list-unstyled">
+          <h2>Otsikko listalle</h2>
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="hakusivu.html">Haku</a></li>
+          <li><a href="kohdesivu.html">Kohteet</a></li>
+          <li><a href="aktiviteetit.html">Aktiviteetit</a></li>
         </ul>
-        <ul class="list-inline">
-            <li class="list-inline-item">
-                <a href="https://github.com/kompassiii"><img src="images/github.svg" width="40" height="40"
-                        alt="Github"></a>
-            </li>
-            <li class="list-inline-item"><a href="https://kompassiii.wordpress.com/"><img src="images/wordpress.svg"
-                        width="40" height="40" alt="Wordpress"></a></li>
-
+      </div>
+      <div class="col">
+        <ul class="list-unstyled">
+          <h2>Otsikko listalle</h2>
+          <li><a href="tuki.html">Tuki</a></li>
+          <li><a href="rekisteröidy.html">Rekisteröidy</a></li>
+          <li><a href="kirjaudu.html">Kirjaudu</a></li>
         </ul>
-        &copy; Kompassi
-    </footer>
+      </div>
+    </div>
+    <!--/.row-->
+
+    <img src="images/kompassi_logo.png" id="footerLogo" class="m-5" alt="logo" width="200" height="200">
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Tietosuojaseloste</a></li>
+      <li class="list-inline-item"><a href="#">Käyttöehdot</a></li>
+      <li class="list-inline-item"><a href="#">Yhteystiedot</a></li>
+    </ul>
+    <ul class="list-inline">
+      <li class="list-inline-item">
+        <a href="https://github.com/kompassiii"><img src="images/github.svg" width="40" height="40" alt="Github"></a>
+      </li>
+      <li class="list-inline-item"><a href="https://kompassiii.wordpress.com/"><img src="images/wordpress.svg"
+            width="40" height="40" alt="Wordpress"></a></li>
+
+    </ul>
+    &copy; Kompassi
+  </footer>
 
 
   <script src="vendor/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>

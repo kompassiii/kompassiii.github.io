@@ -1,6 +1,6 @@
 
 console.log("ajsdkf")
-
+var menuBtn = document.getElementById('menuBtn');
 var contentDivEl = document.getElementById("contentDiv")
 var contentDivTestEl = document.getElementById("contentDivTest")
 var contentDivFirstEl = document.getElementById("contentDivFirst")
@@ -11,6 +11,12 @@ var contentDivFourthEl = document.getElementById("contentDivFourth")
 //Index-page buttons
 let prevBtnEl = document.getElementById("prevBtn");
 let nextBtnEl = document.getElementById("nextBtn");
+
+
+// Header menu btn
+menuBtn.onclick = function() {
+    document.body.classList.toggle('menu-open');
+};
 
 //Aktiviteetti-page buttons
 let prevBtnFirstEl = document.getElementById("prevBtnFirst");
@@ -23,6 +29,7 @@ let prevBtnFourthEl = document.getElementById("prevBtnFourth");
 let nextBtnFourthEl = document.getElementById("nextBtnFourth");
 
 const bodyEl = document.getElementById("body");
+
 
 
 /*Get horizontal srcollbarr width value*/
