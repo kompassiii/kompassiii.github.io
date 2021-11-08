@@ -134,7 +134,7 @@ footer a {
 }
 
 
-.move, .helppokulkuiset {
+.move {
     right: 0px;
     transition: all .6s ease-in-out !important;
 }
