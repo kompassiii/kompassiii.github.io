@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakusivu</title>
+    <link rel="stylesheet" href="vendor/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" media="screen" />
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="container-fluid max-width d-flex justify-content-between align-items-start">
+            <button type="button" id="menuBtn" class="d-md-none">
+                <div class="menu-btn-icon">
+                    <span class="menu-btn-bar"></span>
+                    <span class="menu-btn-bar"></span>
+                    <span class="menu-btn-bar"></span>
+                    <span class="menu-btn-bar"></span>
+                </div>
+                <span class="visually-hidden">Toggle Menu</span>
+            </button>
+
+        </div>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid max-width">
+                <a class="navbar-brand" href="#"><img src="images/kompassi_logo.png" alt="logo"></a>
+                <ul class="navbar-nav justify-content-between w-100">
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="kohdesivu.html">Kohteet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aktiviteetit.html">Aktiviteetit</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="kirjaudu.html">Kirjaudu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rekisteröidy.html">Rekisteröidy</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <main>
+        <div class="container-fluid justify-content-between">
+            <div class="row">
+                <aside class="col-sm d-flex justify-content-end align-items-center">
+                    <div>
+                        <h3>Hakukriteerit</h3>
+                        <ul>
+
+                            <li>
+                                <input type="checkbox" name="sijainti" id="sijainti">
+                                <label for="sijainti">Sijainti</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="estettomyys" id="estettomyys">
+                                <label for="estettomyys">Estettömyys</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="aktiviteetit" id="aktiviteetit">
+                                <label for="aktiviteetit">Aktiviteetit</label>
+                            </li>
+                            <li><input type="checkbox" name="dummy" id="dummy"><label for="dummy">Checkbox</label></li>
+                        </ul>
+                    </div>
+                </aside>
+
+
+                <article class="col-sm">
+                    <div class="d-flex justify-content-center align-items-center mb-2">
+                        <form action="#">
+                            <div class="d-flex justify-content-center align-items-center">
+                              <button type="button">Kohteet</button>
+                              <button type="button">Aktiviteetit</button>
+                             </div>
+                            <input type="text" value="Hae kohteita">
+                        </form>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-wrap flex-gap vh-100">
+                        <a href="kohdesivu.html"><img src="images/kompassi_logo.png" alt="Kuva" width="200" height="178"></a>
+                        <a href="kohdesivu.html"><img src="images/kompassi_logo.png" alt="Kuva" width="200" height="178"></a>
+                        <a href="kohdesivu.html"><img src="images/kompassi_logo.png" alt="Kuva" width="200" height="178"></a>
+                        <a href="kohdesivu.html"><img src="images/kompassi_logo.png" alt="Kuva" width="200" height="178"></a>
+                        <a href="kohdesivu.html"><img src="images/kompassi_logo.png" alt="Kuva" width="200" height="178"></a>
+                        <a href="kohdesivu.html"><img src="images/kompassi_logo.png" alt="Kuva" width="200" height="178"></a>
+                        <a href="kohdesivu.html"><img src="images/kompassi_logo.png" alt="Kuva" width="200" height="178"></a>
+                        <a href="kohdesivu.html"><img src="images/kompassi_logo.png" alt="Kuva" width="200" height="178"></a>
+                    </div>
+                </article>
+
+                <section class="col-sm vh-100 img-map">
+                    <!-- Location placeholder for Map service -->
+                </section>
+        </div>
+    </div>
+</main>
+    <!--/.container  -->
+
+
+    <footer class="text-center">
+        <div class="row p-3">
+            <div class="col">
+                <ul class="list-unstyled">
+                    <h2>Otsikko listalle</h2>
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li><a href="hakusivu.html">Haku</a></li>
+                    <li><a href="kohdesivu.html">Kohteet</a></li>
+                    <li><a href="aktiviteetit.html">Aktiviteetit</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled">
+                    <h2>Otsikko listalle</h2>
+                    <li><a href="tuki.html">Tuki</a></li>
+                    <li><a href="rekisteröidy.html">Rekisteröidy</a></li>
+                    <li><a href="kirjaudu.html">Kirjaudu</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--/.row-->
+
+        <img src="images/kompassi_logo.png" id="footerLogo" class="m-5" alt="logo" width="200" height="200">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Tietosuojaseloste</a></li>
+            <li class="list-inline-item"><a href="#">Käyttöehdot</a></li>
+            <li class="list-inline-item"><a href="#">Yhteystiedot</a></li>
+        </ul>
+        <ul class="list-inline">
+            <li class="list-inline-item">
+                <a href="https://github.com/kompassiii"><img src="images/github.svg" width="40" height="40"
+                        alt="Github"></a>
+            </li>
+            <li class="list-inline-item"><a href="https://kompassiii.wordpress.com/"><img src="images/wordpress.svg"
+                        width="40" height="40" alt="Wordpress"></a></li>
+
+        </ul>
+        &copy; Kompassi
+    </footer>
+
+
+    <script src="vendor/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
