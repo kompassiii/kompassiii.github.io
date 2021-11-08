@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    margin: 0 auto;
+}
+
+section {
+    width: 350px;
+    text-align: center;
+}
+
+form {
+    margin: 1rem 0;
+}
+
+li {
+    margin: .5rem 0;
+}
+
+article {
+    width: 580px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+article img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+article div a {
+    display: block;
+    text-align: center;
+}
+
+aside {
+    border: 5px dotted black;
+    width: 250px;
+    height: 270px;
+}
+
