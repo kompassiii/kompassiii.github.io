@@ -262,6 +262,10 @@ footer a {
         width: 100%;
         margin-right: 0rem;
     }
+    .img-map {
+        visibility: hidden;
+    }
+
 }
 
 @media (min-width: 576px) {
@@ -285,6 +289,7 @@ footer a {
     .homepage-img {
         padding-top: 45%; /* 16:9 (suhdeluvut)*/
     }
+
 
 }
 
