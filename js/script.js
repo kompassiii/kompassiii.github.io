@@ -147,7 +147,7 @@ let hobby = {
 
 
 /*----- Greate horizontal list of contenent-----------*/ 
-function uploadContent(div) {
+function uploadContent(div, activity) {
 
     for (let i in activities) {
 
@@ -157,6 +157,7 @@ function uploadContent(div) {
         
         contentColEl.classList.add("col-6")
         contentColEl.classList.add("col-sm-4")
+        contentColEl.classList.add(activity)
         contentColEl.classList.add("move")
         contentColEl.classList.add("position-relative")
 
@@ -241,8 +242,8 @@ if (bodyEl.classList.contains('homepage')) {
     /*Get horizontal srcollbarr width value*/
     var contentDivWidth = contentDivEl.offsetWidth;
 
-    uploadContent(contentDivEl);
-    uploadContent(contentDivTestEl);
+    uploadContent(contentDivEl, "suosituimmat");
+    uploadContent(contentDivTestEl, "uusimmat");
 
     /*Horizontal scrollbarr prevButton*/
     prevBtnEl.onclick = () => {
@@ -253,7 +254,7 @@ if (bodyEl.classList.contains('homepage')) {
         }
         
         console.log(prevBtnEl.style.move = contentDivWidth)
-        var cols = document.getElementsByClassName('move');
+        var cols = document.getElementsByClassName('suosituimmat');
         for(i = 0; i < cols.length; i++) {
         cols[i].style.right = -contentDivWidth + moveSlide +  "px";
         }
@@ -266,7 +267,7 @@ if (bodyEl.classList.contains('homepage')) {
     nextBtnEl.onclick = () => {
         //show prevBtnEl after first click 
         prevBtnEl.classList.remove('d-none');
-        var cols = document.getElementsByClassName('move');
+        var cols = document.getElementsByClassName('suosituimmat');
         console.log(cols[0].offsetWidth *cols.length - contentDivWidth)
         console.log(moveSlide)
         console.log()
