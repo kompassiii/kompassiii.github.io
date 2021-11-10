@@ -272,7 +272,7 @@ if (bodyEl.classList.contains('homepage')) {
         console.log(moveSlide)
         console.log()
         //hide nextBtnEl if scroll position is end of the list
-        if (cols[0].offsetWidth * cols.length - contentDivWidth < moveSlide + contentDivWidth) {
+        if (cols[0].offsetWidth * cols.length - contentDivWidth <= moveSlide + contentDivWidth) {
             nextBtnEl.classList.add('d-none')
             console.log(moveSlide)
         }
@@ -322,7 +322,7 @@ if (bodyEl.classList.contains('aktiviteetit')) {
         prevBtnFirstEl.classList.remove('d-none');
         var cols = document.getElementsByClassName('helppokulkuiset');
         //hide nextBtnEl if scroll position is end of the list
-        if (cols[0].offsetWidth * cols.length - contentDivWidth < moveSlideFirst + contentDivWidth) {
+        if (cols[0].offsetWidth * cols.length - contentDivWidth <= moveSlideFirst + contentDivWidth) {
             nextBtnFirstEl.classList.add('d-none')
         }
         for(i = 0; i < cols.length; i++) {
@@ -351,7 +351,7 @@ if (bodyEl.classList.contains('aktiviteetit')) {
         prevBtnSecondEl.classList.remove('d-none');
         var cols = document.getElementsByClassName('Vesistö');
         //hide nextBtnEl if scroll position is end of the list
-        if (cols[0].offsetWidth * cols.length - contentDivWidth < moveSlideSecond + contentDivWidth) {
+        if (cols[0].offsetWidth * cols.length - contentDivWidth <= moveSlideSecond + contentDivWidth) {
             nextBtnSecondEl.classList.add('d-none')
         }
         for(i = 0; i < cols.length; i++) {
@@ -381,7 +381,7 @@ if (bodyEl.classList.contains('aktiviteetit')) {
         prevBtnThirdEl.classList.remove('d-none');
         var cols = document.getElementsByClassName('Pyöräilijöille');
         //hide nextBtnEl if scroll position is end of the list
-        if (cols[0].offsetWidth * cols.length - contentDivWidth < moveSlideThird + contentDivWidth) {
+        if (cols[0].offsetWidth * cols.length - contentDivWidth <= moveSlideThird + contentDivWidth) {
             nextBtnThirdEl.classList.add('d-none')
         }
         for(i = 0; i < cols.length; i++) {
@@ -417,7 +417,7 @@ if (bodyEl.classList.contains('aktiviteetit')) {
         console.log(moveSlide)
         console.log()
         //hide nextBtnEl if scroll position is end of the list
-        if (cols[0].offsetWidth * cols.length - contentDivWidth < moveSlide + contentDivWidth) {
+        if (cols[0].offsetWidth * cols.length - contentDivWidth <= moveSlide + contentDivWidth) {
             nextBtnEl.classList.add('d-none')
             console.log(moveSlide)
         }
