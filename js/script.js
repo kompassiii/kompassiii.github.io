@@ -391,7 +391,7 @@ if (bodyEl.classList.contains('aktiviteetit')) {
     }
 
     /*Horizontal scrollbarr prevButton*/
-    prevBtnEl.onclick = () => {
+    prevBtnEl.onclick = () => 
 
         //hide prevBntEl if srcoll position is back to start
         if (moveSlide <= contentDivWidth  ) {
